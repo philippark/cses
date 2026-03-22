@@ -1,3 +1,12 @@
+/*
+Idea:
+5 has an interesting property
+multiply it by an even number, it adds a trailing zero.
+Because 10 is a part of it.
+
+So count all the times a multiple of 5 is included.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

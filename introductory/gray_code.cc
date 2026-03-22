@@ -1,3 +1,25 @@
+/*
+Idea:
+
+n = 1: 0, 1
+n = 2: 00, 01, 11, 10
+
+If we prepend 0 to n-1, we get 00, 01
+If we prepend 1 to n-1, we get 10, 11
+
+The next layer differs by one bit. 
+And in each next layer, each adjacent differs by one bit.
+
+Now how do we combine both layers into one? 
+Notice 01 and 11 differs by one bit.
+If we place them next to each other, we get:
+00, 01, 10, 11
+
+So, the stategy is to generate the next layers by prepending 0,
+and prepending 1. This creates new lists, reverse the second, and
+combine. 
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

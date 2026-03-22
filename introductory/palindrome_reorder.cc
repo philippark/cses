@@ -1,3 +1,13 @@
+/*
+Idea:
+In order to be a possible palindrome,
+all but one character must have equal frequencies.
+
+We can just create the palindrome by splitting,
+and if there is one char with odd frequencies,
+that must be put in the middle.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

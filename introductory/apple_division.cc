@@ -1,3 +1,9 @@
+/*
+Idea:
+WIthout the n <= 20 constraint, this is a NP hard problem.
+There is no mathematical way to solve this, just have to explore every possibility. 
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

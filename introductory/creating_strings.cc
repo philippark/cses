@@ -1,3 +1,8 @@
+/*
+Idea:
+Simple permutations.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

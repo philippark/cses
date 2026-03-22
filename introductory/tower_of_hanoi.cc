@@ -1,3 +1,12 @@
+/*
+Idea:
+Move all the stones on top to another stack,
+move the bottom-most stone to the R stack,
+and then move the rest of the stack to the R stack.
+
+Each stone follows this same strategy. We can recursively solve this.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

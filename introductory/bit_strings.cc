@@ -1,3 +1,10 @@
+/*
+Idea:
+Just compute 2^n.
+But using the library pow() leads to truncation errors, 
+so just compute manually.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,8 @@
+/*
+Idea:
+Backtracking. Recursively explore every queen placement.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

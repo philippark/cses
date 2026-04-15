@@ -10,34 +10,27 @@ previous coins <= current coin.
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<ll> vll;
-
-#define sort(a) sort(a.begin(), a.end())
 #define M 1000000007
 
+const int N = 1e6+5;
+int change[N];
+
 int main() {
-    int n, x;
-    cin >> n >> x;
-    vi coins(n);
-    for (auto&x : coins) {
-        cin >> x;
-    }
-    sort(coins);
-
-    vll v(x+1, 0);
-    v[0] = 1;
-
+    int n,x;
+    cin>>n>>x;
+    int coins[n];
+    for(auto&x:coins)cin>>x;
+    change[0] = 1;
     for (auto coin : coins) {
         for (int i = 1; i <= x; ++i) {
-            if (i-coin >= 0)
-                v[i] = v[i] + v[i-coin];
-                v[i] %= M;
+            if (i-coin >= 0){
+                change[i] += change[i-coin];
+                change[i]%=M;
+            }
         }
     }
 
-    cout << v[x] << "\n";
+    cout << change[x];
 
     return 0;
 }

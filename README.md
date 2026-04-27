@@ -1,3 +1,3 @@
 My solutions to https://cses.fi/problemset/list/
 
-57/400
+58/400

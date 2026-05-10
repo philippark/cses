@@ -1,3 +1,3 @@
-My solutions to https://cses.fi/problemset/list/
+My solutions to the [CSES](https://cses.fi/problemset/list/) problem set, which are algorithmic programming problems used for training in competitive programming.
 
-61/400
+Problem solved: 61/400
